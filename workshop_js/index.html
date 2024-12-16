@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
+
+   <link rel="stylesheet" href="stylesheet.css">
+  
+</head>
+<body>
+   <div class="quiz-container">
+       <h1></h1>
+       <p id="question">PIM ย่อมาจากอะไร ?</p>
+       <button class="button" onclick="checkAnswer('a')">A) พีไอเอ็ม</button>
+       <button class="button" onclick="checkAnswer('b')">B) ปิ๋ม</button>
+       <button class="button" onclick="checkAnswer('c')">C) พิม</button>
+       <button class="button" onclick="checkAnswer('d')">D) ภีม</button>
+       <p id="result"></p>
+   </div>
+
+   <div class="quiz-container">
+        <h1></h1>
+        <p id="question">ข้อใดคือ Application ของบริษัท Vernity</p>
+        <button class="button" onclick="checkAnswerVernity('a')">A) REXX</button>
+        <button class="button" onclick="checkAnswerVernity('b')">B) REXXX</button>
+        <button class="button" onclick="checkAnswerVernity('c')">C) REXXXX</button>
+        <button class="button" onclick="checkAnswerVernity('d')">D) REXXXXX</button>
+        <p id="result2"></p>
+    </div>
+
+
+    <p>สรุปข้อที่ถูกต้องทั้งหมด <span id="all_result">0</span> ข้อ</p>
+
+</body>
+</html>
+
+<script src="checkAnswer.js"></script>
